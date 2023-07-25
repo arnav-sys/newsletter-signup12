@@ -1,0 +1,124 @@
+body{
+    background-color:hsl(228, 45%, 44%);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    height: 60%;
+}
+
+.content{
+    width: 60%;
+    display: block;
+    text-align: left;
+}
+
+h1{
+    font-size: 380%;
+}
+
+p {
+    font-size: large;
+}
+
+li {
+    font-size: large;
+}
+
+label{
+    font-size: large;
+    font-weight: bold;
+}
+
+svg{
+    width: 40%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+.content{
+    width: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    align-items: center;
+    display: flex;
+}
+
+li p{
+    visibility: hidden;
+}
+ul svg{
+    width: 5%;
+}
+
+.mobile{
+    display: none;
+}
+
+input{
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+button{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 3%;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:800px) {
+
+    body{
+        background-color: white;
+        flex-direction: column;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+        width: 100%;
+        margin: 0;
+    }
+    .container{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+    .content{
+        width: 100%;
+        margin-top: 5px;
+        margin-left: 1%;
+    }
+    h1{
+        font-size: 250%;
+    }
+    li{
+        margin-right: 5%;
+    }
+}
